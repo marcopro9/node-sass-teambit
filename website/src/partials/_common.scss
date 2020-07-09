@@ -1,0 +1,18 @@
+// reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// fine reset
+
+// regole generali
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
