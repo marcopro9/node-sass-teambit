@@ -10,44 +10,292 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="container">
+
       <!-- inizio header -->
       <header>
-        <nav class="navbar">
-          <div class="navbar-left">
-            <a href="#">
-              <img class="logo-teambit" src="img/logo.svg" alt="">
+        <div class="container">
+          <!-- inizio navbar -->
+          <nav class="navbar clearfix">
+
+            <!-- navbar left -->
+            <div class="navbar-left float-left">
+              <a href="#">
+                <img class="logo-teambit" src="img/logo.svg" alt="">
+              </a>
+            </div>
+
+            <!-- navbar right -->
+            <div class="navbar-right float-right">
+              <a class="menu-link" href="#">Solutions <i class="fas fa-chevron-down"></i></a>
+              <a class="menu-link" href="#">Pricing</a>
+              <a class="menu-link" href="#">Blog</a>
+              <a class="menu-link" href="#">Sign in</a>
+              <button class="btn-light-blue btn-big" type="button" name="button"><img class="webapp-logo" src="img/google-logo.svg" alt=""> Sign up</button>
+            </div>
+            <a class="burger float-right hidden" href="#">
+                <i class="fas fa-bars"></i>
             </a>
-          </div>
+            <div class="hamburger-menu hidden">
+                  <ul>
+                      <li>
+                          <a href="#">Solutions</a>
+                      </li>
+                      <li>
+                          <a href="#">Pricing</a>
+                      </li>
+                      <li>
+                          <a href="#">Blog</a>
+                      </li>
+                      <li>
+                          <a href="#" class="cta">Sign in</a>
+                      </li>
+                  </ul>
+                  <a href="#" class="close">
+                      <i class="fas fa-times"></i>
+                  </a>
+              </div>
+          </nav>
+          <!-- fine navbar -->
 
-          <div class="navbar-right">
-            <a href="#">Solutions <i class="fas fa-chevron-down"></i></a>
-            <a href="#">Pricing</a>
-            <a href="#">Blog</a>
-            <a href="#">Sign in</a>
-            <button class="btn-blue" type="button" name="button"><img class="google-logo" src="img/google-logo.svg" alt=""> Sign up</button>
-          </div>
-        </nav>
+          <!-- inizio jumbotron -->
+          <div class="jumbotron clearfix">
 
-        <div class="jumbotron clearfix">
-          <div class="jumbo-left">
-            <h1>Understand, recognize and develop your people</h1>
-            <p class="subtitle">Teambit helps teams create a high performing culture with regular feedback.</p>
-            <button class="btn-blue btn-small" type="button" name="button"><img class="google-logo" src="img/google-logo.svg" alt=""> Sign up with Google</button>
-            or
-            <button class="btn-blue btn-small" type="button" name="button"><img class="google-logo" src="img/slack-logo.svg" alt=""> Sign up with Slack</button>
-            <p>or use your email address <i class="fas fa-arrow-right"></i></p>
+            <!-- jumbo left -->
+            <div class="jumbo-left">
+              <h1>Understand, recognize and develop your people</h1>
+              <p class="subtitle-jumbo">Teambit helps teams create a high performing culture with regular feedback.</p>
+              <button class="btn-blue btn-small" type="button" name="button"><img class="webapp-logo" src="img/google-logo.svg" alt=""> Sign up with Google</button>
+              or
+              <button class="btn-blue btn-small" type="button" name="button"><img class="webapp-logo" src="img/slack-logo.svg" alt=""> Sign up with Slack</button>
+              <p>or use your email address <a href="#"><i class="fas fa-arrow-right"></i></a></p>
+            </div>
+
+            <!-- jumbo right -->
+            <div class="jumbo-right">
+              <img src="img/illustration-main.jpg" alt="illustration">
+            </div>
           </div>
-          <div class="jumbo-right">
-            <img src="img/illustration-main.jpg" alt="illustration">
-          </div>
+          <!-- fine jumbotron -->
+        </div>
       </header>
       <!-- fine header -->
-      <section class="traditional-modern">
 
-      </section>
+      <!-- inizio main -->
+      <main>
+        <!-- inizio section traditional/modern -->
+        <section class="traditional-modern salmon-background">
+          <div class="container clearfix">
+            <!-- titolo prima parte sezione -->
+            <h3>Traditional people processes lead to</h3>
 
-    </div>
+            <!-- vignette -->
+            <figure class="float-left">
+              <img class="small-vignette" src="img/hardcore.png" alt="hardcore vignette">
+              <figcaption>They are hardcore, formal and disconnected</figcaption>
+            </figure>
+            <figure class="float-left">
+              <img class="small-vignette" src="img/nofeedback.png" alt="no feedback vignette">
+              <figcaption>They don't encourage regular feedback</figcaption>
+            </figure>
+            <figure class="float-left">
+              <img class="small-vignette" src="img/notsafe.png" alt="not safe vignette">
+              <figcaption>They don't make it safe to speak up</figcaption>
+            </figure>
+          </div>
+          <!-- main vignette -->
+          <img class="main-vignette" src="img/before.png" alt="Before vignette">
+
+          <div class="container clearfix">
+            <hr>
+            <!-- titolo seconda parte sezione -->
+            <h3>Modern solution that team-mates love</h3>
+
+            <!-- vignette -->
+            <figure class="float-left">
+              <img class="small-vignette" src="img/lightweight.png" alt="hardcore vignette">
+              <figcaption>It's lightweight, fun and interconnected</figcaption>
+            </figure>
+            <figure class="float-left">
+              <img class="small-vignette" src="img/feedbacksuggestions.png" alt="no feedback vignette">
+              <figcaption>It encourages regular feedback with contextual requests</figcaption>
+            </figure>
+            <figure class="float-left">
+              <img class="small-vignette" src="img/safe.png" alt="not safe vignette">
+              <figcaption>It creates a safe environment for dialog</figcaption>
+            </figure>
+          </div>
+
+          <!-- main vignette -->
+          <img class="main-vignette" src="img/after.png" alt="After vignette">
+          <h3>Here is how it works</h3>
+
+        </section>
+        <!-- fine section traditional/modern -->
+
+        <!-- inizio section features -->
+        <section class="features">
+
+          <!-- feedback feature -->
+          <div class="feature clearfix">
+            <figure class="float-left">
+              <img class="screenshot" src="img/employee-feedback.jpg" alt="Feedback screenshot">
+            </figure>
+
+            <div class="feature-description float-left">
+              <h3>Feedback to help team-mates improve</h3>
+              <p>Empower your team-mates to know in real time what they are doing weel and what they need to improve.</p>
+              <a class="learn-more-link" href="#">Learn more <i class="fas fa-arrow-right"></i></a>
+              <img class="medium-vignette float-left" src="img/communication.jpg" alt="communication vignette">
+            </div>
+          </div>
+
+          <!-- survey feature -->
+          <div class="feature clearfix">
+            <figure class="float-right">
+              <img class="screenshot" src="img/employee-survey.jpg" alt="Feedback screenshot">
+            </figure>
+
+            <div class="feature-description float-right">
+              <h3>Surveys to help the team be better</h3>
+              <p>Get real-time insights into your team with research-backed, lightweight and regular surveys.</p>
+              <a class="learn-more-link" href="#">Learn more <i class="fas fa-arrow-right"></i></a>
+              <img class="medium-vignette" src="img/insights.jpg" alt="communication vignette">
+            </div>
+          </div>
+
+          <!-- reviews feature -->
+          <div class="feature clearfix">
+            <figure class="float-left">
+              <img class="screenshot" src="img/performance-review.jpg" alt="Feedback screenshot">
+            </figure>
+
+            <div class="feature-description float-left">
+              <h3>Reviews to help team-mates get a fair evaluation</h3>
+              <p>Make better compensation promotion decisions with objective and quick performance reviews.</p>
+              <a class="learn-more-link" href="#">Learn more <i class="fas fa-arrow-right"></i></a>
+              <img class="medium-vignette float-left" src="img/review.jpg" alt="communication vignette">
+            </div>
+          </div>
+
+          <!-- team-mates feature -->
+          <div class="feature clearfix">
+            <figure class="float-right">
+              <img class="screenshot" src="img/employee-survey.jpg" alt="Feedback screenshot">
+            </figure>
+
+            <div class="feature-description float-right">
+              <h3>Praise to help team-mates feel valued</h3>
+              <p>Make it a habit to recognize and praise people who do great work.</p>
+              <a class="learn-more-link" href="#">Learn more <i class="fas fa-arrow-right"></i></a>
+              <img class="medium-vignette" src="img/recognition.jpg" alt="communication vignette">
+            </div>
+          </div>
+
+        </section>
+        <!-- fine section features -->
+
+        <!-- inizio section call to action -->
+        <section class="call-to-action salmon-background">
+          <div class="container">
+            <!-- section title -->
+            <h2>See Teambit for yourself.<br>Get started in seconds <img src="img/happy.svg" alt="party icon"> </h2>
+
+            <div class="white-background">
+              <i class="fas fa-quote-left quote"></i>
+              <p class="small-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="small-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              </p>
+              <p class="small-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              </p>
+              <img class="profile-img" src="img/alex.png" alt="Alex">
+              <img class="profile-img" src="img/bohdan.png" alt="Bohdan">
+              <div class="founders-signature">
+                <p class="signature">Alex and Bohdan</p>
+                <p class="signature-role">Co-Founders at Teambit</p>
+              </div>
+            </div>
+
+            <button class="btn-blue btn-small" type="button" name="button"><img class="webapp-logo" src="img/google-logo.svg" alt=""> Sign up with Google</button>
+            or
+            <button class="btn-blue btn-small" type="button" name="button"><img class="webapp-logo" src="img/slack-logo.svg" alt=""> Sign up with Slack</button>
+            <p>or use your email address <a href="#"><i class="fas fa-arrow-right"></i></a></p>
+
+          </div>
+
+        </section>
+        <!-- fine sezione call to action -->
+      </main>
+      <!-- fine main -->
+
+      <!-- inizio footer -->
+      <footer>
+        <div class="container clearfix">
+          <div class="footer-claim float-left">
+            <img class="float-left" src="img/logo-small.svg" alt="logo teambit small">
+            <p><span class="company-name-footer">Teambit</span> helps teams creat high performing cultures by making feedback a daily habit.</p>
+          </div>
+          <nav>
+            <div class="footer-menu float-left">
+              <h4>Product</h4>
+              <ul class="footer-list">
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Surveys</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Praise</a></li>
+                <li><a href="#">Slack</a></li>
+                <li><a href="#">Integration</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu float-left">
+              <h4>About</h4>
+              <ul class="footer-list">
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Surveys</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Praise</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu float-left">
+              <h4>Connect</h4>
+              <ul class="footer-list">
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Surveys</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Praise</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu float-left">
+              <h4>Lobs</h4>
+              <ul class="footer-list">
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Surveys</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Praise</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu float-left">
+              <h4>From the blog</h4>
+              <ul class="footer-list">
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Surveys</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Praise</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+      </footer>
+
     <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

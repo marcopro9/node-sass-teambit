@@ -1,0 +1,73 @@
+// section traditional-modern
+  .traditional-modern{
+    text-align: center;
+    padding: 50px 0;
+    figure{
+      width: calc(100% / 3);
+      .small-vignette{
+        height: $small-vignette-height;
+      }
+    }
+    .main-vignette{
+      height:$main-vignette-height;
+      margin: 100px 0;
+    }
+  }
+//
+
+// section features
+  .features{
+    padding: 50px 0;
+    .feature{
+      margin-bottom: 100px;
+      figure{
+        width: 50%;
+        .screenshot{
+          width: 100%;
+        }
+      }
+      .feature-description{
+        width: 20%;
+      }
+      .medium-vignette{
+        height: 250px;
+        margin-top: 30px;
+      }
+    }
+  }
+//
+
+// section call to action
+  .call-to-action{
+    padding: 50px 0;
+    text-align: center;
+    .container{
+      max-width: 40%;
+      .white-background{
+        position: relative;
+        text-align: left;
+        background-color: $third-color;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid $second-color;
+        margin-bottom: 50px;
+        .quote{
+          position: absolute;
+          top: -16px;
+          left: 0;
+          font-size: 30px;
+          color: $second-color;
+        }
+        .profile-img{
+          height: 50px;
+          margin-right: 10px;
+          vertical-align: sub;
+        }
+        .founders-signature{
+          display: inline-block;
+          height: 50px;
+        }
+      }
+    }
+  }
+//

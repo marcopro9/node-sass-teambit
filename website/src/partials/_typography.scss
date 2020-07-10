@@ -1,3 +1,63 @@
 body{
   font-family: $font-family;
 }
+a{
+  color:$first-color;
+  text-decoration: none;
+}
+.menu-link{
+  margin-left: 30px;
+  font-weight: $font-weight;
+}
+.learn-more-link{
+  color: $second-color;
+  font-weight: bold;
+  font-size: $p-font-size;
+  display: block;
+}
+h1{
+  @include text-color-margin-bottom;
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+}
+h2{
+  @include text-color-margin-bottom;
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+}
+h3{
+  @include text-color-margin-bottom;
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+}
+p{
+  @include text-color-margin-bottom;
+  font-size: $p-font-size;
+  line-height: $p-line-height;
+}
+.subtitle-jumbo{
+  @include text-color-margin-bottom;
+  font-size: $subtitle-font-size;
+  line-height: $subtitle-line-height;
+}
+figcaption{
+  font-size: $figcaption-font-size;
+  color:$first-color;
+  margin-top: 30px;
+}
+.small-message{
+  font-size: $font-size-small;
+}
+.signature{
+  font-size: $font-size-small;
+  color: $second-color;
+  margin: 0 0 2px;
+}
+.signature-role{
+  font-size: $font-size-small;
+  margin: -5px 0 0;
+}
+.company-name-footer{
+  color:$second-color;
+  font-size: $font-size-small;
+}

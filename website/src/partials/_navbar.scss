@@ -1,39 +1,22 @@
+@media all and (max-width: 900px) {
+  .navbar-right{
+    display: none;
+  }
+  .burger{
+    display:block;
+  }
+}
+
 .navbar{
-  display: $display;
   height: 70px;
-  border-bottom: 1px solid $text-color;
+  line-height: 70px;
+  border-bottom: 1px solid $first-color;
+  position: sticky;
   .navbar-left{
-    display: $display;
-    align-items: center;
-    width: 70%;
+    width: 30%;
   }
   .navbar-right{
-    display: $display;
-    align-items: center;
-    justify-content: flex-end;
-    flex-shrink: 0;
-    a, .btn-blue{
-      margin-left: 30px;
-      font-weight: $font-weight-menu-navbar;
-    }
-    a{
-      text-decoration: none;
-      color:$text-color;
-    }
+    width: 70%;
+    text-align: right;
   }
-}
-.btn-blue{
-  padding: 8px;
-  border-radius: $button-border-radius;
-  color: $button-text-color;
-  background-color: $button-background-color;
-  border: 1px solid $button-border-color;
-  .google-logo{
-    display: inline;
-    vertical-align: middle;
-    height: 25px;
-  }
-}
-.btn-blue:hover{
-  color: $button-border-color;
 }

@@ -1,0 +1,24 @@
+.btn-light-blue{
+  @include details-buttons;
+  background-color: $fourth-color;
+  margin-left: 30px;
+}
+.webapp-logo{
+  display: inline;
+  vertical-align: middle;
+  height: 25px;
+}
+.btn-light-blue:hover, .btn-blue:hover{
+  color: $second-color;
+}
+.btn-blue{
+  @include details-buttons;
+  background-color: $second-color;
+  margin-bottom: 20px;
+}
+.btn-big{
+  padding: $button-big-padding;
+}
+.btn-small{
+  padding: $button-small-padding;
+}

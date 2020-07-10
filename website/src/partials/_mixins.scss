@@ -1,0 +1,18 @@
+@mixin details-buttons{
+  font-weight: bold;
+  border-radius: 5px;
+  color: $third-color;
+  border: 1px solid $second-color;
+}
+@mixin text-color-margin-bottom{
+  color:$first-color;
+  margin-bottom: 30px;
+}
+@mixin jumbo-width-float-mobile{
+  float: none;
+  width: 100%;
+}
+@mixin jumbo-width-float-desktop{
+  float: left;
+  width: 50%;
+}
