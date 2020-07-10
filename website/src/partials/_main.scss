@@ -4,6 +4,7 @@
     padding: 50px 0;
     figure{
       width: calc(100% / 3);
+      float: left;
       .small-vignette{
         height: $small-vignette-height;
       }
@@ -20,14 +21,32 @@
     padding: 50px 0;
     .feature{
       margin-bottom: 100px;
-      figure{
+      .figure-left{
         width: 50%;
+        float: left;
         .screenshot{
           width: 100%;
         }
       }
-      .feature-description{
+      .figure-right{
+        width:50%;
+        float:right;
+        .screenshot{
+          width: 100%;
+        }
+      }
+      .feature-description-left{
+        float: left;
         width: 20%;
+      }
+      .feature-description-right{
+        float: right;
+        width: 20%;
+      }
+      .medium-vignette-left{
+        float: left;
+        height: 250px;
+        margin-top: 30px;
       }
       .medium-vignette{
         height: 250px;

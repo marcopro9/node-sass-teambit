@@ -4,6 +4,7 @@
   }
   .burger{
     display:block;
+    float: right;
   }
 }
 
@@ -14,8 +15,10 @@
   position: sticky;
   .navbar-left{
     width: 30%;
+    float: left;
   }
   .navbar-right{
+    float:right;
     width: 70%;
     text-align: right;
   }

@@ -1,11 +1,13 @@
 footer{
   padding: 50px 0;
-  .footer-claim{
+  .footer-claim-left{
+    float: left;
     width: 20%;
     margin-right: 100px;
   }
   nav{
     .footer-menu{
+      float: left;
       width: 12%;
       .footer-list{
         list-style: none;

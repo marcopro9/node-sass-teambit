@@ -153,6 +153,7 @@ figcaption {
 
   .burger {
     display: block;
+    float: right;
   }
 }
 
@@ -166,9 +167,11 @@ figcaption {
 
 .navbar .navbar-left {
   width: 30%;
+  float: left;
 }
 
 .navbar .navbar-right {
+  float: right;
   width: 70%;
   text-align: right;
 }
@@ -214,6 +217,7 @@ header .jumbotron .jumbo-right img {
 
 .traditional-modern figure {
   width: calc(100% / 3);
+  float: left;
 }
 
 .traditional-modern figure .small-vignette {
@@ -233,16 +237,38 @@ header .jumbotron .jumbo-right img {
   margin-bottom: 100px;
 }
 
-.features .feature figure {
+.features .feature .figure-left {
   width: 50%;
+  float: left;
 }
 
-.features .feature figure .screenshot {
+.features .feature .figure-left .screenshot {
   width: 100%;
 }
 
-.features .feature .feature-description {
+.features .feature .figure-right {
+  width: 50%;
+  float: right;
+}
+
+.features .feature .figure-right .screenshot {
+  width: 100%;
+}
+
+.features .feature .feature-description-left {
+  float: left;
   width: 20%;
+}
+
+.features .feature .feature-description-right {
+  float: right;
+  width: 20%;
+}
+
+.features .feature .medium-vignette-left {
+  float: left;
+  height: 250px;
+  margin-top: 30px;
 }
 
 .features .feature .medium-vignette {
@@ -292,12 +318,14 @@ footer {
   padding: 50px 0;
 }
 
-footer .footer-claim {
+footer .footer-claim-left {
+  float: left;
   width: 20%;
   margin-right: 100px;
 }
 
 footer nav .footer-menu {
+  float: left;
   width: 12%;
 }
 
