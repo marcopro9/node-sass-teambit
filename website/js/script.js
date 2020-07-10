@@ -4,12 +4,12 @@ var hiddenMenu = $(".hamburger-menu");
 
 menuOpen.click(
   function(){
-    hiddenMenu.addClass("active");
+    hiddenMenu.removeClass("hidden");
   }
 );
 
 menuClose.click(
   function(){
-    hiddenMenu.removeClass("active");
+    hiddenMenu.addClass("hidden");
   }
 );
