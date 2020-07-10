@@ -8,11 +8,15 @@
   color:$first-color;
   margin-bottom: 30px;
 }
-@mixin jumbo-width-float-mobile{
+@mixin width100-float-none-mobile{
   float: none;
   width: 100%;
 }
-@mixin jumbo-width-float-desktop{
+@mixin width50-float-left-desktop{
   float: left;
+  width: 50%;
+}
+@mixin width50-float-right-desktop{
+  float: right;
   width: 50%;
 }

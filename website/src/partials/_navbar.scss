@@ -1,18 +1,8 @@
-@media all and (max-width: 900px) {
-  .navbar-right{
-    display: none;
-  }
-  .burger{
-    display:block;
-    float: right;
-  }
-}
-
 .navbar{
   height: 70px;
   line-height: 70px;
   border-bottom: 1px solid $first-color;
-  position: sticky;
+  position: relative;
   .navbar-left{
     width: 30%;
     float: left;
@@ -21,5 +11,47 @@
     float:right;
     width: 70%;
     text-align: right;
+    @media all and (max-width: 900px) {
+      display: none;
+    }
+  }
+  .burger{
+    @media all and (max-width: 900px) {
+      display:block;
+      float: right;
+    }
+  }
+  .hamburger-menu {
+    position: absolute;
+    top: 0;
+    right: -65px;
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    background: $third-color;
+    border: 1px solid $first-color;
+  }
+  .hamburger-menu ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style: none;
+  }
+  .hamburger-menu ul li a {
+    color: $first-color;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid $third-color;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    color: $first-color;
+    font-size: 35px;
+    text-decoration: none;
   }
 }

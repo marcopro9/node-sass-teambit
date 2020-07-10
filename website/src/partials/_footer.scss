@@ -4,11 +4,24 @@ footer{
     float: left;
     width: 20%;
     margin-right: 100px;
+    @media all and (max-width: 900px) {
+      float:none;
+      width: 90%;
+      margin: 0 auto 20px;
+      p{
+        display: inline;
+      }
+    }
   }
   nav{
     .footer-menu{
       float: left;
       width: 12%;
+      @media all and (max-width: 900px) {
+        float:none;
+        width: 90%;
+        margin: 0 auto 20px;
+      }
       .footer-list{
         list-style: none;
         li{

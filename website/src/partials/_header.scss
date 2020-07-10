@@ -1,22 +1,18 @@
-@media all and (max-width: 900px) {
-  .jumbo-left{
-    @include jumbo-width-float-mobile;
-  }
-  .jumbo-right{
-    @include jumbo-width-float-mobile;
-    img{
-      width: 500px;
-    }
-  }
-}
 header{
   .jumbotron{
     padding: 50px 0;
     .jumbo-left{
-      @include jumbo-width-float-desktop;
+      @include width50-float-left-desktop;
+      @media all and (max-width: 900px) {
+        @include width100-float-none-mobile;
+        text-align: center;
+      }
     }
     .jumbo-right{
-      @include jumbo-width-float-desktop;
+      @include width50-float-left-desktop;
+      @media all and (max-width: 900px) {
+        @include width100-float-none-mobile;
+      }
       img{
         width: 100%;
       }

@@ -5,6 +5,11 @@
     figure{
       width: calc(100% / 3);
       float: left;
+      @media all and (max-width: 900px) {
+        float: none;
+        width: 50%;
+        margin: 20px auto;
+      }
       .small-vignette{
         height: $small-vignette-height;
       }
@@ -22,15 +27,21 @@
     .feature{
       margin-bottom: 100px;
       .figure-left{
-        width: 50%;
-        float: left;
+        @include width50-float-left-desktop;
+        @media all and (max-width: 900px) {
+          @include width100-float-none-mobile;
+          margin: 20px auto;
+        }
         .screenshot{
           width: 100%;
         }
       }
       .figure-right{
-        width:50%;
-        float:right;
+        @include width50-float-right-desktop;
+        @media all and (max-width: 900px) {
+          @include width100-float-none-mobile;
+          margin: 20px auto;
+        }
         .screenshot{
           width: 100%;
         }
@@ -38,19 +49,39 @@
       .feature-description-left{
         float: left;
         width: 20%;
+        @media all and (max-width: 900px) {
+          width: 80%;
+          float: none;
+          margin: 20px auto;
+          text-align: center;
+        }
       }
       .feature-description-right{
         float: right;
         width: 20%;
+        @media all and (max-width: 900px) {
+          width: 80%;
+          float: none;
+          margin: 20px auto;
+          text-align: center;
+        }
       }
       .medium-vignette-left{
         float: left;
         height: 250px;
         margin-top: 30px;
+        @media all and (max-width: 900px) {
+          float: none;
+          margin: 20px auto;
+        }
       }
       .medium-vignette{
         height: 250px;
         margin-top: 30px;
+        @media all and (max-width: 900px) {
+          float: none;
+          margin: 20px auto;
+        }
       }
     }
   }
@@ -62,6 +93,9 @@
     text-align: center;
     .container{
       max-width: 40%;
+      @media all and (max-width: 900px) {
+        max-width: 80%;
+      }
       .white-background{
         position: relative;
         text-align: left;
